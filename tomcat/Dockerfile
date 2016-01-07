@@ -1,4 +1,6 @@
 FROM tomcat:8.0
+# RUN se ejecuta en construccion, CMD es el comando con el que se ejecutara el container
+# tomcat:8.0 ya tiene un CMD que arranca catalina.sh run, lo que haremos es machacar ese CMD para que use el nuestro
 
 ADD logging.properties /usr/local/tomcat/conf/logging.properties 
 
